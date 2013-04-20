@@ -1,0 +1,14 @@
+.users-index-item{
+  padding: 10px;
+  background: $white;
+  @include box-shadow(0 2px 5px rgba(0,0,0,.1)); 
+
+  @include inline-block;
+  margin: 0 10px 10px 0;
+
+  @for $i from 1 through 40{
+    &:nth-child( #{$i} ){
+        @include animate(fadeInLeft, .4s, $i * .07s);
+    }
+  }
+}

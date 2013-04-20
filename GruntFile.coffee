@@ -45,6 +45,7 @@ module.exports = (grunt)->
 
     grunt.registerTask 'default', ['connect', 'watch']
     grunt.registerTask 'dev', ['clean', 'copy', 'compass:dev']
+    grunt.registerTask 'preview', ['connect', 'watch']
 
     grunt.loadNpmTasks 'grunt-contrib-jshint'
     grunt.loadNpmTasks 'jwalsh-grunt-contrib-copy'

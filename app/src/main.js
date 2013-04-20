@@ -1,3 +1,8 @@
 define(function (require) {
-  console.log('Application::init()');
-})
+  var App = require('src/application');
+  var $ = require('jquery');
+  $(function() {
+    App.start();
+    console.log('Application::initialized');
+  });
+});

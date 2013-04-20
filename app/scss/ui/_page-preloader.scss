@@ -1,0 +1,21 @@
+.page-preloader-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.page-preloader-ani{
+  $d: 64px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -$d * .5;
+  margin-top: -$d * .5;
+  display: block;
+  width: $d;
+  height: $d;
+  background-color: red;
+  @include animate(bounceInUp, 1s, 0);
+}

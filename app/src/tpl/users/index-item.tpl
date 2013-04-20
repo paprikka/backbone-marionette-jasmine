@@ -1,0 +1,1 @@
+<a href="#!/users/get/{{id}}">{{firstName}} {{lastName}}</a>
