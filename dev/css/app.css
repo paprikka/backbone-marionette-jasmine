@@ -1,0 +1,9 @@
+/* line 1, ../../app/scss/pages/_intro.scss */
+.body {
+  background-color: pink;
+}
+
+/* line 2, ../../app/scss/app.scss */
+body {
+  background-color: red;
+}

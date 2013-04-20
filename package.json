@@ -1,17 +1,23 @@
 {
-  "name": "example-app",
+  "name": "backbone-marionette-jasmine",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.4.3",
     "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-stylus": "~0.5.0",
     "grunt-contrib-watch": "~0.3.1",
-    "grunt-contrib-clean": "~0.4.1"
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-connect": "~0.3.0",
+    "jwalsh-grunt-contrib-copy": "~0.4.2",
+    "grunt-contrib-compass": "~0.2.0"
   },
   "jam": {
-    "Backbone.Marionette": null,
-    "handlebars": null
+    "packageDir": "app/src/vendor",
+    "baseUrl": "app",
+    "dependecies": {
+      "Backbone.Marionette": null,
+      "handlebars": null
+    }
   }
 }
