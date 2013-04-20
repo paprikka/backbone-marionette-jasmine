@@ -3288,13 +3288,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 1, ../../app/scss/_layout.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 4, ../../app/scss/_layout.scss */
 .page-container {
   width: 100%;
   height: 100%;
-  position: absolute;
 }
 
-/* line 7, ../../app/scss/_layout.scss */
+/* line 10, ../../app/scss/_layout.scss */
 .main-container {
   width: 100%;
   height: 100%;
@@ -3669,24 +3673,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-animation: fadeInLeft 0.4s 2.8s ease both;
   animation: fadeInLeft 0.4s 2.8s ease both;
 }
+/* line 16, ../../app/scss/pages/_users-index.scss */
+.users-index-item .user-avatar-wrapper {
+  width: 60px;
+  float: left;
+  display: block;
+  width: 60px;
+  height: 60px;
+  -webkit-border-radius: 100em;
+  -moz-border-radius: 100em;
+  -ms-border-radius: 100em;
+  -o-border-radius: 100em;
+  border-radius: 100em;
+  overflow: hidden;
+}
+/* line 30, ../../app/scss/pages/_users-index.scss */
+.users-index-item .user-avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+  background-color: #666666;
+  color: #333333;
+}
+/* line 42, ../../app/scss/pages/_users-index.scss */
+.users-index-item .user-desc {
+  margin-left: 70px;
+  line-height: 60px;
+}
 
-/* line 22, ../../app/scss/app.scss */
+/* line 1, ../../app/scss/pages/_users-get.scss */
+.users-get-container {
+  -webkit-animation: fadeInLeft 0.6s 0.2s ease both;
+  -moz-animation: fadeInLeft 0.6s 0.2s ease both;
+  -ms-animation: fadeInLeft 0.6s 0.2s ease both;
+  -o-animation: fadeInLeft 0.6s 0.2s ease both;
+  animation: fadeInLeft 0.6s 0.2s ease both;
+}
+
+/* line 23, ../../app/scss/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 26, ../../app/scss/app.scss */
+/* line 27, ../../app/scss/app.scss */
 body {
   font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
-  background-color: #fafafa;
-}
-
-/* line 34, ../../app/scss/app.scss */
-* {
-  -webkit-box-shadow: 0 0 3px rgba(255, 0, 0, 0.3) inset;
-  -moz-box-shadow: 0 0 3px rgba(255, 0, 0, 0.3) inset;
-  box-shadow: 0 0 3px rgba(255, 0, 0, 0.3) inset;
-  background-color: rgba(255, 0, 0, 0.05);
+  background: #fafafa url('/img/bg.jpg');
 }

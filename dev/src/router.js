@@ -21,7 +21,11 @@ define(function (require) {
 
     fourOhFour:function() {
       console.log('Router::404');
-      this.navigate('!/');
+      // this could be done in a sooo much more simple way in coffeeScript: '=>'
+      var self = this;
+      _.defer(function() {
+        self.navigate('!/');
+      });
     },
 
     usersIndex:function(){

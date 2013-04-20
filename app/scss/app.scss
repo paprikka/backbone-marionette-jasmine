@@ -17,6 +17,7 @@
 // subpages / states
 @import "pages/intro";
 @import "pages/users-index";
+@import "pages/users-get";
 
 
 *{
@@ -24,14 +25,15 @@
 }
 
 body{
+
   font-family: $body-font-stack;
-  background-color: $white;
+  background: $white image-url('bg.jpg');
 }
 
 
 // debug
 
-*{
-  @include box-shadow(0 0 3px rgba(255,0,0,.3) inset);
-  background-color: rgba(255,0,0,.05);
-}
+// *{
+//   @include box-shadow(0 0 3px rgba(255,0,0,.3) inset);
+//   background-color: rgba(255,0,0,.05);
+// }

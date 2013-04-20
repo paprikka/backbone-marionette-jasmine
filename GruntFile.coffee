@@ -31,6 +31,7 @@ module.exports = (grunt)->
         options:
           sassDir:'app/scss'
           cssDir:'dev/css'
+          imagesDir: 'img'
 
     connect:
       dev:

@@ -11,4 +11,38 @@
         @include animate(fadeInLeft, .4s, $i * .07s);
     }
   }
+
+  $avatarSize: 60px;
+  .user-avatar-wrapper{
+    width: $avatarSize;
+    float: left;
+    display: block;
+    width: $avatarSize;
+    height: $avatarSize;
+    @include border-radius(100em);
+    overflow: hidden;
+    img{
+
+    }
+  }
+
+
+  .user-avatar-placeholder{
+    width: $avatarSize;
+    height: $avatarSize;
+    text-align: center;
+    line-height: $avatarSize;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    background-color: $gray;
+    color: $gray-dark;
+  }
+
+  .user-desc{
+    margin-left: $avatarSize + 10px;
+    line-height: $avatarSize;
+  }
 }
+
+
