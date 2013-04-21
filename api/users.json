@@ -1,0 +1,28 @@
+[
+{
+    "id":1,
+    "firstName": "Rafal",
+    "lastName": "Pastuszak",
+    "twitterHandle": "paprikkaStudio",
+    "avatarUrl": "/files/1.png",
+    "phone":"+43505164772",
+    "email":"rafal@paprikka.pl",
+    "currentPosition":"designer, front-end developer",
+    "description": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+  },
+  {
+    "id":2,
+    "firstName": "Karl Gustav",
+    "lastName": "Jung"
+  },
+  {
+    "id":3,
+    "firstName": "Stefan",
+    "lastName": "Batory"
+  },
+  {
+    "id":4,
+    "firstName": "Jane",
+    "lastName": "Doe"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "author": "Jerome Gravel-Niquet <jeromegn@gmail.com> (http://jgn.me)",
+  "name": "Backbone.localStorage",
+  "version": "1.1.0",
+  "description": "A localStorage adapter for Backbone.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeromegn/Backbone.localStorage.git"
+  },
+  "devDependencies": {
+    "uglify-js": "~1.2.6",
+    "mocha-phantomjs": "~1.1.2"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "jam": {
+    "main": "backbone.localStorage.js",
+    "include": ["backbone.localStorage.js"],
+    "dependencies": {
+      "backbone": "~0.9"
+    }
+  }
+}
