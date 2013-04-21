@@ -3468,7 +3468,7 @@ you can use the generic selector below, but it's slower:
 
 /* line 9, ../../app/scss/ui/_page-preloader.scss */
 .page-preloader-ani {
-  background: #e95c33 url('/img/loader-gears.gif') center no-repeat;
+  background: #e95c33 url('/./img/loader-gears.gif') center no-repeat;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -4167,7 +4167,7 @@ you can use the generic selector below, but it's slower:
 
 /* line 33, ../../app/scss/app.scss */
 body {
-  background: #fafafa url('/img/bg.jpg');
+  background: #fafafa url('/./img/bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
