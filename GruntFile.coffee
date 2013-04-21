@@ -45,7 +45,7 @@ module.exports = (grunt)->
     #     port: 35729 
 
 
-    grunt.registerTask 'default', ['connect', 'watch']
+    grunt.registerTask 'default', ['dev', 'connect', 'watch']
     grunt.registerTask 'dev', [ 'copy', 'compass:dev']
     grunt.registerTask 'preview', ['connect', 'watch']
 

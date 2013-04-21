@@ -8,3 +8,4 @@
 <div class="user-desc">
   <a href="#!/users/get/{{id}}">{{firstName}} {{lastName}}</a>  
 </div>
+<button class="user-remove-btn"><i class="icon-close"></i></button>

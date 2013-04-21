@@ -3483,7 +3483,7 @@ you can use the generic selector below, but it's slower:
   color: #fafafa;
   margin-bottom: .5em;
 }
-/* line 9, ../../app/scss/pages/_users-index.scss */
+/* line 1, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item {
   padding: 10px;
   background: #fafafa;
@@ -3498,7 +3498,7 @@ you can use the generic selector below, but it's slower:
   *display: inline;
   margin: 0 10px 10px 0;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(1) {
   -webkit-animation: fadeInLeft 0.4s 0.07s ease both;
   -moz-animation: fadeInLeft 0.4s 0.07s ease both;
@@ -3506,7 +3506,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.07s ease both;
   animation: fadeInLeft 0.4s 0.07s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(2) {
   -webkit-animation: fadeInLeft 0.4s 0.14s ease both;
   -moz-animation: fadeInLeft 0.4s 0.14s ease both;
@@ -3514,7 +3514,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.14s ease both;
   animation: fadeInLeft 0.4s 0.14s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(3) {
   -webkit-animation: fadeInLeft 0.4s 0.21s ease both;
   -moz-animation: fadeInLeft 0.4s 0.21s ease both;
@@ -3522,7 +3522,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.21s ease both;
   animation: fadeInLeft 0.4s 0.21s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(4) {
   -webkit-animation: fadeInLeft 0.4s 0.28s ease both;
   -moz-animation: fadeInLeft 0.4s 0.28s ease both;
@@ -3530,7 +3530,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.28s ease both;
   animation: fadeInLeft 0.4s 0.28s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(5) {
   -webkit-animation: fadeInLeft 0.4s 0.35s ease both;
   -moz-animation: fadeInLeft 0.4s 0.35s ease both;
@@ -3538,7 +3538,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.35s ease both;
   animation: fadeInLeft 0.4s 0.35s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(6) {
   -webkit-animation: fadeInLeft 0.4s 0.42s ease both;
   -moz-animation: fadeInLeft 0.4s 0.42s ease both;
@@ -3546,7 +3546,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.42s ease both;
   animation: fadeInLeft 0.4s 0.42s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(7) {
   -webkit-animation: fadeInLeft 0.4s 0.49s ease both;
   -moz-animation: fadeInLeft 0.4s 0.49s ease both;
@@ -3554,7 +3554,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.49s ease both;
   animation: fadeInLeft 0.4s 0.49s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(8) {
   -webkit-animation: fadeInLeft 0.4s 0.56s ease both;
   -moz-animation: fadeInLeft 0.4s 0.56s ease both;
@@ -3562,7 +3562,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.56s ease both;
   animation: fadeInLeft 0.4s 0.56s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(9) {
   -webkit-animation: fadeInLeft 0.4s 0.63s ease both;
   -moz-animation: fadeInLeft 0.4s 0.63s ease both;
@@ -3570,7 +3570,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.63s ease both;
   animation: fadeInLeft 0.4s 0.63s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(10) {
   -webkit-animation: fadeInLeft 0.4s 0.7s ease both;
   -moz-animation: fadeInLeft 0.4s 0.7s ease both;
@@ -3578,7 +3578,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.7s ease both;
   animation: fadeInLeft 0.4s 0.7s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(11) {
   -webkit-animation: fadeInLeft 0.4s 0.77s ease both;
   -moz-animation: fadeInLeft 0.4s 0.77s ease both;
@@ -3586,7 +3586,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.77s ease both;
   animation: fadeInLeft 0.4s 0.77s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(12) {
   -webkit-animation: fadeInLeft 0.4s 0.84s ease both;
   -moz-animation: fadeInLeft 0.4s 0.84s ease both;
@@ -3594,7 +3594,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.84s ease both;
   animation: fadeInLeft 0.4s 0.84s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(13) {
   -webkit-animation: fadeInLeft 0.4s 0.91s ease both;
   -moz-animation: fadeInLeft 0.4s 0.91s ease both;
@@ -3602,7 +3602,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.91s ease both;
   animation: fadeInLeft 0.4s 0.91s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(14) {
   -webkit-animation: fadeInLeft 0.4s 0.98s ease both;
   -moz-animation: fadeInLeft 0.4s 0.98s ease both;
@@ -3610,7 +3610,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 0.98s ease both;
   animation: fadeInLeft 0.4s 0.98s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(15) {
   -webkit-animation: fadeInLeft 0.4s 1.05s ease both;
   -moz-animation: fadeInLeft 0.4s 1.05s ease both;
@@ -3618,7 +3618,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.05s ease both;
   animation: fadeInLeft 0.4s 1.05s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(16) {
   -webkit-animation: fadeInLeft 0.4s 1.12s ease both;
   -moz-animation: fadeInLeft 0.4s 1.12s ease both;
@@ -3626,7 +3626,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.12s ease both;
   animation: fadeInLeft 0.4s 1.12s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(17) {
   -webkit-animation: fadeInLeft 0.4s 1.19s ease both;
   -moz-animation: fadeInLeft 0.4s 1.19s ease both;
@@ -3634,7 +3634,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.19s ease both;
   animation: fadeInLeft 0.4s 1.19s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(18) {
   -webkit-animation: fadeInLeft 0.4s 1.26s ease both;
   -moz-animation: fadeInLeft 0.4s 1.26s ease both;
@@ -3642,7 +3642,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.26s ease both;
   animation: fadeInLeft 0.4s 1.26s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(19) {
   -webkit-animation: fadeInLeft 0.4s 1.33s ease both;
   -moz-animation: fadeInLeft 0.4s 1.33s ease both;
@@ -3650,7 +3650,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.33s ease both;
   animation: fadeInLeft 0.4s 1.33s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(20) {
   -webkit-animation: fadeInLeft 0.4s 1.4s ease both;
   -moz-animation: fadeInLeft 0.4s 1.4s ease both;
@@ -3658,7 +3658,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.4s ease both;
   animation: fadeInLeft 0.4s 1.4s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(21) {
   -webkit-animation: fadeInLeft 0.4s 1.47s ease both;
   -moz-animation: fadeInLeft 0.4s 1.47s ease both;
@@ -3666,7 +3666,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.47s ease both;
   animation: fadeInLeft 0.4s 1.47s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(22) {
   -webkit-animation: fadeInLeft 0.4s 1.54s ease both;
   -moz-animation: fadeInLeft 0.4s 1.54s ease both;
@@ -3674,7 +3674,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.54s ease both;
   animation: fadeInLeft 0.4s 1.54s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(23) {
   -webkit-animation: fadeInLeft 0.4s 1.61s ease both;
   -moz-animation: fadeInLeft 0.4s 1.61s ease both;
@@ -3682,7 +3682,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.61s ease both;
   animation: fadeInLeft 0.4s 1.61s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(24) {
   -webkit-animation: fadeInLeft 0.4s 1.68s ease both;
   -moz-animation: fadeInLeft 0.4s 1.68s ease both;
@@ -3690,7 +3690,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.68s ease both;
   animation: fadeInLeft 0.4s 1.68s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(25) {
   -webkit-animation: fadeInLeft 0.4s 1.75s ease both;
   -moz-animation: fadeInLeft 0.4s 1.75s ease both;
@@ -3698,7 +3698,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.75s ease both;
   animation: fadeInLeft 0.4s 1.75s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(26) {
   -webkit-animation: fadeInLeft 0.4s 1.82s ease both;
   -moz-animation: fadeInLeft 0.4s 1.82s ease both;
@@ -3706,7 +3706,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.82s ease both;
   animation: fadeInLeft 0.4s 1.82s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(27) {
   -webkit-animation: fadeInLeft 0.4s 1.89s ease both;
   -moz-animation: fadeInLeft 0.4s 1.89s ease both;
@@ -3714,7 +3714,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.89s ease both;
   animation: fadeInLeft 0.4s 1.89s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(28) {
   -webkit-animation: fadeInLeft 0.4s 1.96s ease both;
   -moz-animation: fadeInLeft 0.4s 1.96s ease both;
@@ -3722,7 +3722,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 1.96s ease both;
   animation: fadeInLeft 0.4s 1.96s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(29) {
   -webkit-animation: fadeInLeft 0.4s 2.03s ease both;
   -moz-animation: fadeInLeft 0.4s 2.03s ease both;
@@ -3730,7 +3730,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.03s ease both;
   animation: fadeInLeft 0.4s 2.03s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(30) {
   -webkit-animation: fadeInLeft 0.4s 2.1s ease both;
   -moz-animation: fadeInLeft 0.4s 2.1s ease both;
@@ -3738,7 +3738,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.1s ease both;
   animation: fadeInLeft 0.4s 2.1s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(31) {
   -webkit-animation: fadeInLeft 0.4s 2.17s ease both;
   -moz-animation: fadeInLeft 0.4s 2.17s ease both;
@@ -3746,7 +3746,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.17s ease both;
   animation: fadeInLeft 0.4s 2.17s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(32) {
   -webkit-animation: fadeInLeft 0.4s 2.24s ease both;
   -moz-animation: fadeInLeft 0.4s 2.24s ease both;
@@ -3754,7 +3754,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.24s ease both;
   animation: fadeInLeft 0.4s 2.24s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(33) {
   -webkit-animation: fadeInLeft 0.4s 2.31s ease both;
   -moz-animation: fadeInLeft 0.4s 2.31s ease both;
@@ -3762,7 +3762,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.31s ease both;
   animation: fadeInLeft 0.4s 2.31s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(34) {
   -webkit-animation: fadeInLeft 0.4s 2.38s ease both;
   -moz-animation: fadeInLeft 0.4s 2.38s ease both;
@@ -3770,7 +3770,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.38s ease both;
   animation: fadeInLeft 0.4s 2.38s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(35) {
   -webkit-animation: fadeInLeft 0.4s 2.45s ease both;
   -moz-animation: fadeInLeft 0.4s 2.45s ease both;
@@ -3778,7 +3778,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.45s ease both;
   animation: fadeInLeft 0.4s 2.45s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(36) {
   -webkit-animation: fadeInLeft 0.4s 2.52s ease both;
   -moz-animation: fadeInLeft 0.4s 2.52s ease both;
@@ -3786,7 +3786,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.52s ease both;
   animation: fadeInLeft 0.4s 2.52s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(37) {
   -webkit-animation: fadeInLeft 0.4s 2.59s ease both;
   -moz-animation: fadeInLeft 0.4s 2.59s ease both;
@@ -3794,7 +3794,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.59s ease both;
   animation: fadeInLeft 0.4s 2.59s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(38) {
   -webkit-animation: fadeInLeft 0.4s 2.66s ease both;
   -moz-animation: fadeInLeft 0.4s 2.66s ease both;
@@ -3802,7 +3802,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.66s ease both;
   animation: fadeInLeft 0.4s 2.66s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(39) {
   -webkit-animation: fadeInLeft 0.4s 2.73s ease both;
   -moz-animation: fadeInLeft 0.4s 2.73s ease both;
@@ -3810,7 +3810,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.73s ease both;
   animation: fadeInLeft 0.4s 2.73s ease both;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
+/* line 10, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item:nth-child(40) {
   -webkit-animation: fadeInLeft 0.4s 2.8s ease both;
   -moz-animation: fadeInLeft 0.4s 2.8s ease both;
@@ -3818,7 +3818,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeInLeft 0.4s 2.8s ease both;
   animation: fadeInLeft 0.4s 2.8s ease both;
 }
-/* line 24, ../../app/scss/pages/_users-index.scss */
+/* line 16, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item .user-avatar-wrapper {
   width: 60px;
   float: left;
@@ -3827,7 +3827,7 @@ you can use the generic selector below, but it's slower:
   height: 60px;
   overflow: hidden;
 }
-/* line 37, ../../app/scss/pages/_users-index.scss */
+/* line 29, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item .user-avatar-placeholder {
   width: 60px;
   height: 60px;
@@ -3839,22 +3839,54 @@ you can use the generic selector below, but it's slower:
   background-color: #d0d0d0;
   color: #666666;
 }
-/* line 49, ../../app/scss/pages/_users-index.scss */
+/* line 41, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item .user-desc {
   margin-left: 70px;
   line-height: 60px;
 }
-/* line 53, ../../app/scss/pages/_users-index.scss */
+/* line 45, ../../app/scss/pages/_index-item.scss */
 .users-index-page .users-index-item .user-desc a {
   text-decoration: none;
   color: #666666;
   font-size: 24px;
 }
-/* line 64, ../../app/scss/pages/_users-index.scss */
+/* line 53, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item .user-remove-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 100%;
+  background-color: #ea6753;
+  color: #fafafa;
+  border: none;
+  width: 32px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+/* line 76, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item:hover .user-remove-btn {
+  visibility: visible;
+  opacity: .8;
+}
+/* line 83, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item:hover .user-remove-btn:hover {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  opacity: 1;
+}
+/* line 12, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-list {
   display: inline;
 }
-/* line 69, ../../app/scss/pages/_users-index.scss */
+/* line 17, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-add-btn {
   text-decoration: none;
   color: #fafafa;
@@ -3866,7 +3898,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeIn 0.9s 1s ease both;
   animation: fadeIn 0.9s 1s ease both;
 }
-/* line 76, ../../app/scss/pages/_users-index.scss */
+/* line 24, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-add-btn:hover {
   background-color: rgba(250, 250, 250, 0.1);
 }

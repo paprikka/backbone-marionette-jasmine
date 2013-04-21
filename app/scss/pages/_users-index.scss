@@ -6,60 +6,8 @@
     color: $white;
     margin-bottom: .5em;
   }
-  .users-index-item{
-    padding: 10px;
-    background: $white;
-    @include box-shadow(0 2px 5px rgba(0,0,0,.1)); 
-
-    @include inline-block;
-    margin: 0 10px 10px 0;
-
-    @for $i from 1 through 40{
-      &:nth-child( #{$i} ){
-        @include animate(fadeInLeft, .4s, $i * .07s);
-      }
-    }
-
-    $avatarSize: 60px;
-    .user-avatar-wrapper{
-      width: $avatarSize;
-      float: left;
-      display: block;
-      width: $avatarSize;
-      height: $avatarSize;
-      overflow: hidden;
-      img{
-
-      }
-    }
-
-
-    .user-avatar-placeholder{
-      width: $avatarSize;
-      height: $avatarSize;
-      text-align: center;
-      line-height: $avatarSize;
-      text-transform: uppercase;
-      font-size: 18px;
-      display: block;
-      background-color: $gray-lighter;
-      color: $gray;
-    }
-
-    .user-desc{
-      margin-left: $avatarSize + 10px;
-      line-height: $avatarSize;
-      
-      a{
-        text-decoration: none;
-        color: $gray;
-        font-size: 24px;
-      }
-    }
-
-
-
-  }
+  
+  @import "index-item"; // inline import will preserve scope
 
   .users-index-list{
     display:inline;
