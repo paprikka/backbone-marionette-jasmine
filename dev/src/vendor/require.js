@@ -2012,6 +2012,11 @@ var jam = {
             "main": "lib/amd/backbone.babysitter.js"
         },
         {
+            "name": "Backbone.localStorage",
+            "location": "src/vendor/Backbone.localStorage",
+            "main": "backbone.localStorage.js"
+        },
+        {
             "name": "backbone.marionette",
             "location": "src/vendor/backbone.marionette",
             "main": "lib/core/amd/backbone.marionette.js"
@@ -2071,6 +2076,11 @@ if (typeof require !== "undefined" && require.config) {
             "main": "lib/amd/backbone.babysitter.js"
         },
         {
+            "name": "Backbone.localStorage",
+            "location": "src/vendor/Backbone.localStorage",
+            "main": "backbone.localStorage.js"
+        },
+        {
             "name": "backbone.marionette",
             "location": "src/vendor/backbone.marionette",
             "main": "lib/core/amd/backbone.marionette.js"
@@ -2127,6 +2137,11 @@ else {
             "name": "backbone.babysitter",
             "location": "src/vendor/backbone.babysitter",
             "main": "lib/amd/backbone.babysitter.js"
+        },
+        {
+            "name": "Backbone.localStorage",
+            "location": "src/vendor/Backbone.localStorage",
+            "main": "backbone.localStorage.js"
         },
         {
             "name": "backbone.marionette",
