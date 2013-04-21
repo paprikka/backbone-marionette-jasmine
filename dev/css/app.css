@@ -3293,7 +3293,7 @@ body, html {
 }
 
 /* line 19, ../../app/scss/_layout.scss */
-.users-index-page, .users-get-container {
+.users-index-page, .users-edit-page, .users-get-container {
   max-width: 640px;
   width: 100%;
   margin: 10px auto;
@@ -3313,21 +3313,21 @@ body, html {
   position: relative;
 }
 
-/* line 4, ../../app/scss/_typography.scss */
-.users-index-page .users-index-title {
+/* line 5, ../../app/scss/_typography.scss */
+.users-index-page .users-index-title, .users-edit-page .user-edit-title {
   margin-bottom: .5em;
   font-size: 48px;
   font-weight: 100;
 }
 
-/* line 10, ../../app/scss/_typography.scss */
+/* line 11, ../../app/scss/_typography.scss */
 .users-index-page .index-empty-header, .users-get-container .single-user-name {
   margin-bottom: .5em;
   font-size: 32px;
   font-weight: 100;
 }
 
-/* line 18, ../../app/scss/_typography.scss */
+/* line 19, ../../app/scss/_typography.scss */
 body {
   line-height: 1.4;
   font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
@@ -3361,7 +3361,7 @@ you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
 /* line 20, ../../app/scss/vendor/_icons.scss */
-.icon-home, .icon-twitter, .icon-pencil, .icon-pencil-2, .icon-quill, .icon-pen, .icon-image, .icon-tag, .icon-close, .icon-checkmark, .icon-cog, .icon-users, .icon-quotes-left, .icon-phone, .icon-envelop {
+.icon-home, .icon-twitter, .icon-pencil, .icon-pencil-2, .icon-quill, .icon-pen, .icon-image, .icon-tag, .icon-close, .icon-checkmark, .icon-cog, .icon-users, .icon-quotes-left, .icon-phone, .icon-envelop, .icon-wrench, .icon-arrow-right {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -3447,6 +3447,16 @@ you can use the generic selector below, but it's slower:
   content: "\e00e";
 }
 
+/* line 75, ../../app/scss/vendor/_icons.scss */
+.icon-wrench:before {
+  content: "\e00f";
+}
+
+/* line 78, ../../app/scss/vendor/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e010";
+}
+
 /* line 1, ../../app/scss/ui/_page-preloader.scss */
 .page-preloader-container {
   position: absolute;
@@ -3467,16 +3477,77 @@ you can use the generic selector below, but it's slower:
   display: block;
   width: 80px;
   height: 80px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
   -webkit-animation: fadeInUp 0.7s 0 ease both;
   -moz-animation: fadeInUp 0.7s 0 ease both;
   -ms-animation: fadeInUp 0.7s 0 ease both;
   -o-animation: fadeInUp 0.7s 0 ease both;
   animation: fadeInUp 0.7s 0 ease both;
+}
+
+/* line 5, ../../app/scss/ui/_form.scss */
+.ui-form-group {
+  margin-bottom: 1em;
+}
+
+/* line 9, ../../app/scss/ui/_form.scss */
+.ui-form-label {
+  font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
+  color: #fafafa;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+}
+
+/* line 17, ../../app/scss/ui/_form.scss */
+.ui-form-input {
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+  font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
+  border: none;
+  font-size: 18px;
+  font-weight: 100;
+  background-color: rgba(250, 250, 250, 0.4);
+}
+/* line 28, ../../app/scss/ui/_form.scss */
+.ui-form-input:focus {
+  outline: none;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+@media all and (max-width: 768px) {
+  /* line 17, ../../app/scss/ui/_form.scss */
+  .ui-form-input {
+    width: 100%;
+  }
+}
+
+/* line 1, ../../app/scss/ui/_buttons.scss */
+.users-index-page .users-index-add-btn, .users-edit-page .save-and-close-btn, .users-edit-page .cancel-btn {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fafafa;
+  font-size: 32px;
+  padding: 10px;
+  -webkit-animation: fadeIn 0.9s 1s ease both;
+  -moz-animation: fadeIn 0.9s 1s ease both;
+  -ms-animation: fadeIn 0.9s 1s ease both;
+  -o-animation: fadeIn 0.9s 1s ease both;
+  animation: fadeIn 0.9s 1s ease both;
+}
+/* line 9, ../../app/scss/ui/_buttons.scss */
+.users-index-page .users-index-add-btn:hover, .users-edit-page .save-and-close-btn:hover, .users-edit-page .cancel-btn:hover {
+  background-color: rgba(250, 250, 250, 0.1);
+}
+@media all and (max-width: 768px) {
+  /* line 1, ../../app/scss/ui/_buttons.scss */
+  .users-index-page .users-index-add-btn, .users-edit-page .save-and-close-btn, .users-edit-page .cancel-btn {
+    display: block;
+  }
 }
 
 /* line 1, ../../app/scss/pages/_intro.scss */
@@ -3863,11 +3934,18 @@ you can use the generic selector below, but it's slower:
   font-size: 24px;
 }
 /* line 53, ../../app/scss/pages/_index-item.scss */
-.users-index-page .users-index-item .user-remove-btn {
+.users-index-page .users-index-item .user-tools {
   position: absolute;
   left: 0;
   top: 0;
-  width: 12px;
+  width: 100%;
+  height: 100%;
+}
+/* line 62, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item .user-remove-btn, .users-index-page .users-index-item .user-edit-btn, .users-index-page .users-index-item .user-show-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 100%;
   background-color: #ea6753;
   color: #fafafa;
@@ -3881,13 +3959,38 @@ you can use the generic selector below, but it's slower:
   transition: 0.2s;
   cursor: pointer;
 }
-/* line 76, ../../app/scss/pages/_index-item.scss */
-.users-index-page .users-index-item:hover .user-remove-btn {
+/* line 77, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item .user-remove-btn i, .users-index-page .users-index-item .user-edit-btn i, .users-index-page .users-index-item .user-show-btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+/* line 93, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item .user-edit-btn {
+  background-color: #101010;
+  left: 32px;
+  text-decoration: none;
+}
+/* line 100, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item .user-show-btn {
+  background-color: #101010;
+  left: auto;
+  right: 0;
+  text-decoration: none;
+}
+/* line 106, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item .user-show-btn:hover {
+  width: 50px;
+}
+/* line 112, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item:hover .user-remove-btn, .users-index-page .users-index-item:hover .user-edit-btn, .users-index-page .users-index-item:hover .user-show-btn {
   visibility: visible;
   opacity: .8;
 }
-/* line 83, ../../app/scss/pages/_index-item.scss */
-.users-index-page .users-index-item:hover .user-remove-btn:hover {
+/* line 119, ../../app/scss/pages/_index-item.scss */
+.users-index-page .users-index-item:hover .user-remove-btn:hover, .users-index-page .users-index-item:hover .user-edit-btn:hover, .users-index-page .users-index-item:hover .user-show-btn:hover {
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
   -o-transition: 0.1s;
@@ -3918,22 +4021,10 @@ you can use the generic selector below, but it's slower:
 .users-index-page .users-index-list {
   display: inline;
 }
-/* line 18, ../../app/scss/pages/_users-index.scss */
-.users-index-page .users-index-add-btn {
-  text-decoration: none;
-  cursor: pointer;
+
+/* line 4, ../../app/scss/pages/_users-edit.scss */
+.users-edit-page .user-edit-title {
   color: #fafafa;
-  font-size: 32px;
-  padding: 10px;
-  -webkit-animation: fadeIn 0.9s 1s ease both;
-  -moz-animation: fadeIn 0.9s 1s ease both;
-  -ms-animation: fadeIn 0.9s 1s ease both;
-  -o-animation: fadeIn 0.9s 1s ease both;
-  animation: fadeIn 0.9s 1s ease both;
-}
-/* line 26, ../../app/scss/pages/_users-index.scss */
-.users-index-page .users-index-add-btn:hover {
-  background-color: rgba(250, 250, 250, 0.1);
 }
 
 /* line 1, ../../app/scss/pages/_users-get.scss */
@@ -4067,14 +4158,14 @@ you can use the generic selector below, but it's slower:
   margin-bottom: .5em;
 }
 
-/* line 26, ../../app/scss/app.scss */
+/* line 29, ../../app/scss/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 30, ../../app/scss/app.scss */
+/* line 33, ../../app/scss/app.scss */
 body {
   background: #fafafa url('/img/bg.jpg');
   -webkit-background-size: cover;

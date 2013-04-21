@@ -1,0 +1,16 @@
+%header-btn{
+  text-decoration: none;
+  cursor: pointer;
+  color: $white;
+  font-size: 32px;
+  padding: 10px;
+
+  @include animate(fadeIn, .9s, 1s);
+  &:hover{
+    background-color: transparentize($white, .9);
+  }
+
+  @include respond-to(phone){
+    display: block;
+  }
+}

@@ -1,0 +1,41 @@
+.ui-form{
+
+}
+
+.ui-form-group{
+  margin-bottom: 1em;
+}
+
+.ui-form-label{
+  font-family: $form-font-stack;
+  color: $white;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+}
+
+%ui-form-input{
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+  font-family: $form-font-stack;
+  border: none;  
+
+  font-size: 18px;
+  font-weight: 100;
+  background-color: transparentize($white, .6);
+
+  &:focus{
+    outline:none;
+    background-color: transparentize($white, .4);
+  }
+
+  @include respond-to(phone){
+    width: 100%;
+    
+  }
+}
+
+.ui-form-input{
+  @extend %ui-form-input;
+}

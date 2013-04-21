@@ -3,7 +3,6 @@ define(function(require){
   Backbone.Marionette   = require('backbone.marionette');
   var _                 = require('underscore');
 
-  var UsersIndexView    = require('src/views/users-index');
   var Router            = require('src/router');
 
   var Application       = new Backbone.Marionette.Application();
@@ -13,9 +12,9 @@ define(function(require){
   // in case we wanted to extend our app with view that are not related to User model
 
   Application.addRegions({
-    sidebar:  '#sidebar-container',
+    // sidebar:  '#sidebar-container',
     main:     '#main-container',
-    tools:    '#tools-container',
+    // tools:    '#tools-container',
     modal:    '#modal-container'
   });
 

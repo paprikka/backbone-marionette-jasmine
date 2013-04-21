@@ -4,10 +4,11 @@ define(function (require) {
 
   var UsersIndexView = require('src/views/users/index');
   var UsersGetView = require('src/views/users/get');
+  var UsersEditView = require('src/views/users/edit');
 
 
   var Router = Backbone.Router.extend({
-    // TODO: add controller
+
     initialize:function(app) {
       this.application = app;
       console.log('Router::initialize()');
@@ -19,6 +20,7 @@ define(function (require) {
       '*anything':'fourOhFour'
     },
 
+    // TODO: put action methods in controller
     fourOhFour:function() {
       console.log('Router::404');
       // this could be done in a sooo much more simple way in coffeeScript: '=>'
@@ -29,15 +31,17 @@ define(function (require) {
     },
 
     usersIndex:function(){
-      console.log('usersIndex');
+      console.log('Router::usersIndex');
       var usersIndexView = new UsersIndexView();
       this.application.main.show(usersIndexView);
     },
-    usersEdit:function(){
-      console.log('usersEdit');
+    usersEdit:function(id){
+      console.log('Router::usersEdit');
+      var usersEditView = new UsersEditView({userId: id});
+      this.application.main.show(usersEditView);
     },
     usersGet:function(id){
-      console.log('usersGet');
+      console.log('Router::usersGet');
       var usersGetView = new UsersGetView({userId: id});
       this.application.main.show(usersGetView);
     }

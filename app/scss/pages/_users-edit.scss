@@ -1,0 +1,16 @@
+.users-edit-page{
+    @extend %subpage-container;
+
+  .user-edit-title{
+    @extend %alpha;   
+    color: $white;
+  }
+
+
+  .save-and-close-btn{
+    @extend %header-btn;
+  }
+  .cancel-btn{
+    @extend %header-btn;
+  }
+}
