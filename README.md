@@ -11,7 +11,8 @@
 4. get GruntJS CLI: `npm install -g grunt-cli`
 5. get Testem, a test runner toolkit: `npm install -g testem` 
 7. install local NodeJS dependencies: `npm install`
-8. install front-end AMD dependencies with JamJS: `jam install`
+8. install jamjs: `npm install jamjs`
+9. install front-end AMD dependencies with JamJS: `jam install`
 
 ## Preview / deploy on local machine:
 
