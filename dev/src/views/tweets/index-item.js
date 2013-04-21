@@ -7,8 +7,15 @@ define(function (require) {
 
 
   var TweetsIndexItemView = Backbone.Marionette.ItemView.extend({
+    events:{
+      'click .user-remove-btn': 'onUserRemoveClick'
+    },
     className: 'tweets-index-item',
-    template: Handlebars.compile(TweetsIndexItemViewTemplate)
+    template: Handlebars.compile(TweetsIndexItemViewTemplate),
+    onUserRemoveClick:function (e) {
+      debugger
+      this.model.destroy();
+    }
   });
 
   return TweetsIndexItemView;

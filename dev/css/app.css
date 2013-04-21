@@ -3321,10 +3321,16 @@ body, html {
 }
 
 /* line 10, ../../app/scss/_typography.scss */
-.users-get-container .single-user-name {
+.users-index-page .index-empty-header, .users-get-container .single-user-name {
   margin-bottom: .5em;
   font-size: 32px;
   font-weight: 100;
+}
+
+/* line 18, ../../app/scss/_typography.scss */
+body {
+  line-height: 1.4;
+  font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
 }
 
 @font-face {
@@ -3461,16 +3467,16 @@ you can use the generic selector below, but it's slower:
   display: block;
   width: 80px;
   height: 80px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  border-radius: 100px;
-  -webkit-animation: fadeIn 0.4s 0 ease both;
-  -moz-animation: fadeIn 0.4s 0 ease both;
-  -ms-animation: fadeIn 0.4s 0 ease both;
-  -o-animation: fadeIn 0.4s 0 ease both;
-  animation: fadeIn 0.4s 0 ease both;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-animation: fadeInUp 0.7s 0 ease both;
+  -moz-animation: fadeInUp 0.7s 0 ease both;
+  -ms-animation: fadeInUp 0.7s 0 ease both;
+  -o-animation: fadeInUp 0.7s 0 ease both;
+  animation: fadeInUp 0.7s 0 ease both;
 }
 
 /* line 1, ../../app/scss/pages/_intro.scss */
@@ -3478,6 +3484,12 @@ you can use the generic selector below, but it's slower:
   background-color: pink;
 }
 
+/* line 1, ../../app/scss/pages/_users-index.scss */
+.users-index-page {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 /* line 4, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-title {
   color: #fafafa;
@@ -3882,13 +3894,34 @@ you can use the generic selector below, but it's slower:
   transition: 0.1s;
   opacity: 1;
 }
-/* line 12, ../../app/scss/pages/_users-index.scss */
+/* line 1, ../../app/scss/pages/_index-empty.scss */
+.users-index-page .users-index-empty {
+  color: #fafafa;
+  background: rgba(250, 250, 250, 0.1);
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-animation: fadeInLeft 0.2s 0.2s ease both;
+  -moz-animation: fadeInLeft 0.2s 0.2s ease both;
+  -ms-animation: fadeInLeft 0.2s 0.2s ease both;
+  -o-animation: fadeInLeft 0.2s 0.2s ease both;
+  animation: fadeInLeft 0.2s 0.2s ease both;
+}
+/* line 8, ../../app/scss/pages/_index-empty.scss */
+.users-index-page .index-empty-header {
+  margin-bottom: 0;
+}
+/* line 13, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-list {
   display: inline;
 }
-/* line 17, ../../app/scss/pages/_users-index.scss */
+/* line 18, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-add-btn {
   text-decoration: none;
+  cursor: pointer;
   color: #fafafa;
   font-size: 32px;
   padding: 10px;
@@ -3898,7 +3931,7 @@ you can use the generic selector below, but it's slower:
   -o-animation: fadeIn 0.9s 1s ease both;
   animation: fadeIn 0.9s 1s ease both;
 }
-/* line 24, ../../app/scss/pages/_users-index.scss */
+/* line 26, ../../app/scss/pages/_users-index.scss */
 .users-index-page .users-index-add-btn:hover {
   background-color: rgba(250, 250, 250, 0.1);
 }
@@ -3915,6 +3948,8 @@ you can use the generic selector below, but it's slower:
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  *zoom: 1;
 }
 /* line 9, ../../app/scss/pages/_users-get.scss */
 .users-get-container .users-single-close-btn {
@@ -3960,25 +3995,44 @@ you can use the generic selector below, but it's slower:
 }
 @media all and (max-width: 768px) {
   /* line 46, ../../app/scss/pages/_users-get.scss */
-  .users-get-container .single-user-avatar {
+  .users-get-container .single-user-avatar, .users-get-container .single-user-avatar-placeholder {
     width: 100%;
     height: auto;
   }
 }
-/* line 56, ../../app/scss/pages/_users-get.scss */
+/* line 53, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-avatar-placeholder {
+  display: block;
+  width: 320px;
+  height: 320px;
+  text-align: center;
+  line-height: 320px;
+  text-transform: uppercase;
+  font-size: 48px;
+  display: block;
+  background-color: #d0d0d0;
+  color: #666666;
+}
+@media all and (max-width: 768px) {
+  /* line 53, ../../app/scss/pages/_users-get.scss */
+  .users-get-container .single-user-avatar-placeholder {
+    width: 100%;
+  }
+}
+/* line 73, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-general {
   font-size: 18px;
 }
-/* line 58, ../../app/scss/pages/_users-get.scss */
+/* line 75, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-general dt {
   color: #999999;
 }
-/* line 62, ../../app/scss/pages/_users-get.scss */
+/* line 79, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-general dd {
   font-size: 14px;
   margin-bottom: 1em;
 }
-/* line 71, ../../app/scss/pages/_users-get.scss */
+/* line 88, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-contact-link {
   font-size: 14px;
   color: #4d90fe;
@@ -3988,42 +4042,40 @@ you can use the generic selector below, but it's slower:
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-/* line 76, ../../app/scss/pages/_users-get.scss */
+/* line 93, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-contact-link:hover {
   color: #e95c33;
 }
-/* line 81, ../../app/scss/pages/_users-get.scss */
+/* line 98, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-content {
   margin-left: 330px;
 }
 @media all and (max-width: 768px) {
-  /* line 81, ../../app/scss/pages/_users-get.scss */
+  /* line 98, ../../app/scss/pages/_users-get.scss */
   .users-get-container .single-user-content {
     margin-left: 0;
   }
 }
-/* line 89, ../../app/scss/pages/_users-get.scss */
+/* line 106, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-section {
   margin-bottom: 2em;
 }
-/* line 94, ../../app/scss/pages/_users-get.scss */
+/* line 111, ../../app/scss/pages/_users-get.scss */
 .users-get-container .single-user-content-title {
   font-size: 24px;
   color: #999999;
   margin-bottom: .5em;
 }
 
-/* line 24, ../../app/scss/app.scss */
+/* line 26, ../../app/scss/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 28, ../../app/scss/app.scss */
+/* line 30, ../../app/scss/app.scss */
 body {
-  line-height: 1.4em;
-  font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
   background: #fafafa url('/img/bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;

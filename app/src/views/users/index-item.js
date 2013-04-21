@@ -7,8 +7,15 @@ define(function (require) {
 
 
   var UsersIndexItemView = Backbone.Marionette.ItemView.extend({
+    events:{
+      'click .user-remove-btn':'onUserRemoveClick'
+    },
+    tagName: 'li',
     className: 'users-index-item',
-    template: Handlebars.compile(UsersIndexItemViewTemplate)
+    template: Handlebars.compile(UsersIndexItemViewTemplate),
+    onUserRemoveClick: function(){
+      this.model.destroy();
+    }
   });
 
   return UsersIndexItemView;

@@ -32,7 +32,6 @@ define(function (require) {
       console.log('usersIndex');
       var usersIndexView = new UsersIndexView();
       this.application.main.show(usersIndexView);
-      usersIndexView.render();
     },
     usersEdit:function(){
       console.log('usersEdit');
@@ -41,7 +40,6 @@ define(function (require) {
       console.log('usersGet');
       var usersGetView = new UsersGetView({userId: id});
       this.application.main.show(usersGetView);
-      // usersGetView.render();
     }
   });
 

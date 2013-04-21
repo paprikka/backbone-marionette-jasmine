@@ -11,16 +11,19 @@ define(function (require) {
     // 
     // Namespacing is very important here (I prefer Java-style reverse domain notation):
     localStorage: new Store('pl.paprikka.ContactApp.Users'),
-    defaults:{
-      firstName:  'John',
-      lastName:   'Doe'
+    defaults: function(){
+        return {
+          firstName:  'John',
+          lastName:   'Doe',
+          created: (new Date()).getTime()
+        }
     },
     toJSON:function() {
       var attrs = _.clone(this.attributes);
       attrs.fullName = attrs.firstName + " " + attrs.lastName;
       attrs.initials = attrs.firstName.charAt(0) + attrs.lastName.charAt(0);
       return attrs;
-    }
+    },
   });
 
 

@@ -1,6 +1,8 @@
 // base - compass library, onlys selected modules to speed up build times
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/user-interface";
+@import "compass/utilities/general/clearfix";
 
 
 // vendor - related imports
@@ -26,8 +28,6 @@
 }
 
 body{
-  line-height: 1.4em;
-  font-family: $body-font-stack;
   background: $white image-url('bg.jpg');
   @include background-size(cover);
 }

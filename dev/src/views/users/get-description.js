@@ -12,6 +12,14 @@ define(function (require) {
     },
     initialize:function (options) {
       this.model = options.model;
+    },
+    serializeData:function(){
+      var attrs = this.model.toJSON();
+      if(attrs.email || attrs.phone || attrs.twitterHandle){
+        attrs.hasContactInfo = true;
+      }
+
+      return attrs;
     }
   });
   return UserSingleDescriptionView;

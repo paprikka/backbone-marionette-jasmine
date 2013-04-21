@@ -4,7 +4,7 @@
   background-color: $white;
   padding: 10px;
   @include box-shadow(0 3px 5px rgba(0,0,0,.1));
-
+  @include clearfix;
   
   .users-single-close-btn{
     $size: 36px;
@@ -49,7 +49,24 @@
       height: auto;
     }
   }
-
+  
+  .single-user-avatar-placeholder{
+    $avatarSize: 320px;
+    @extend .single-user-avatar;
+    display: block;
+    width: $avatarSize;
+    height: $avatarSize;
+    text-align: center;
+    line-height: $avatarSize;
+    text-transform: uppercase;
+    font-size: 48px;
+    display: block;
+    background-color: $gray-lighter;
+    color: $gray;
+    @include respond-to(phone){
+      width: 100%;
+    }
+  }
   .single-user-name{
     @extend %beta;
   }

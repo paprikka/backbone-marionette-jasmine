@@ -1,0 +1,16 @@
+.users-index-empty{
+  color: $white;
+  background: transparentize($white, .9);
+  padding: 10px;
+  @include border-radius(3px);
+  @include animate(fadeInLeft, .2s);
+}
+.index-empty-header{
+  @extend %beta;
+  margin-bottom: 0;
+
+}
+.index-empty-import-examples{
+
+
+}

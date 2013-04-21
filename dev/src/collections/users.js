@@ -4,8 +4,11 @@ define(function (require) {
   Store = require('Backbone.localStorage');
   var UsersCollection = Backbone.Collection.extend({
     url:'/api/users.json',
-    localStorage: new Store('UsersCollection'),
-    model: UserModel
+    localStorage: new Store('pl.paprikka.ContactApp.Users'),
+    model: UserModel,
+    initialize:function(){
+
+    }
   });
 
   return UsersCollection;

@@ -1,5 +1,5 @@
 .users-index-page{
-
+  @include user-select(none);
   @extend %subpage-container;
   .users-index-title{
     @extend %alpha;
@@ -8,6 +8,7 @@
   }
   
   @import "index-item"; // inline import will preserve scope
+  @import "index-empty"; // inline import will preserve scope
 
   .users-index-list{
     display:inline;
@@ -16,6 +17,7 @@
 
   .users-index-add-btn{
     text-decoration: none;
+    cursor: pointer;
     color: $white;
     font-size: 32px;
     padding: 10px;
