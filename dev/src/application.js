@@ -37,6 +37,7 @@ define(function(require){
     // that is why we are removing it just via jQuery
 
     $(this.modal.el).empty();
+    this.router.usersIndex();
   });
 
   Application.addInitializer(function () {
