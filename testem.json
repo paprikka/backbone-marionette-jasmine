@@ -1,3 +1,5 @@
 {
-  "test_page": "dev/specsRunner.html"
+  "test_page": "dev/specs-runner.html",
+  "framework": "jasmine",
+  "src_files": "dev/**/*.js"
 }

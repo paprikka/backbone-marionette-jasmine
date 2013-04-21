@@ -41,7 +41,7 @@ define(function (require) {
       console.log('usersGet');
       var usersGetView = new UsersGetView({userId: id});
       this.application.main.show(usersGetView);
-      usersGetView.render();
+      // usersGetView.render();
     }
   });
 

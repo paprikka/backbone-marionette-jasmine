@@ -13,16 +13,15 @@
 
   <script src="src/vendor/require.js"></script>
   <script>
+
   require(
     [
-      'src/application'
+      'specs/models/user_spec'
     ],
-    function(Application) {
+    function(Person) {
       var jasmineEnv = jasmine.getEnv();
       jasmineEnv.addReporter(new jasmine.HtmlReporter)
-      window.onload = function() {
-        jasmineEnv.execute();
-      };
+      jasmineEnv.execute();
     }
   );
   </script>

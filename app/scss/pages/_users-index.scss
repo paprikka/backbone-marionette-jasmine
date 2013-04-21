@@ -1,48 +1,84 @@
-.users-index-item{
-  padding: 10px;
-  background: $white;
-  @include box-shadow(0 2px 5px rgba(0,0,0,.1)); 
+.users-index-page{
 
-  @include inline-block;
-  margin: 0 10px 10px 0;
+  @extend %subpage-container;
+  .users-index-title{
+    @extend %alpha;
+    color: $white;
+    margin-bottom: .5em;
+  }
+  .users-index-item{
+    padding: 10px;
+    background: $white;
+    @include box-shadow(0 2px 5px rgba(0,0,0,.1)); 
 
-  @for $i from 1 through 40{
-    &:nth-child( #{$i} ){
+    @include inline-block;
+    margin: 0 10px 10px 0;
+
+    @for $i from 1 through 40{
+      &:nth-child( #{$i} ){
         @include animate(fadeInLeft, .4s, $i * .07s);
+      }
+    }
+
+    $avatarSize: 60px;
+    .user-avatar-wrapper{
+      width: $avatarSize;
+      float: left;
+      display: block;
+      width: $avatarSize;
+      height: $avatarSize;
+      overflow: hidden;
+      img{
+
+      }
+    }
+
+
+    .user-avatar-placeholder{
+      width: $avatarSize;
+      height: $avatarSize;
+      text-align: center;
+      line-height: $avatarSize;
+      text-transform: uppercase;
+      font-size: 18px;
+      display: block;
+      background-color: $gray-lighter;
+      color: $gray;
+    }
+
+    .user-desc{
+      margin-left: $avatarSize + 10px;
+      line-height: $avatarSize;
+      
+      a{
+        text-decoration: none;
+        color: $gray;
+        font-size: 24px;
+      }
+    }
+
+
+
+  }
+
+  .users-index-list{
+    display:inline;
+
+  }
+
+  .users-index-add-btn{
+    text-decoration: none;
+    color: $white;
+    font-size: 32px;
+    padding: 10px;
+
+    @include animate(fadeIn, .9s, 1s);
+    &:hover{
+      background-color: transparentize($white, .9);
     }
   }
 
-  $avatarSize: 60px;
-  .user-avatar-wrapper{
-    width: $avatarSize;
-    float: left;
-    display: block;
-    width: $avatarSize;
-    height: $avatarSize;
-    @include border-radius(100em);
-    overflow: hidden;
-    img{
-
-    }
-  }
 
 
-  .user-avatar-placeholder{
-    width: $avatarSize;
-    height: $avatarSize;
-    text-align: center;
-    line-height: $avatarSize;
-    text-transform: uppercase;
-    font-size: 18px;
-    display: block;
-    background-color: $gray;
-    color: $gray-dark;
-  }
 
-  .user-desc{
-    margin-left: $avatarSize + 10px;
-    line-height: $avatarSize;
-  }
 }
-
-

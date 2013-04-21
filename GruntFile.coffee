@@ -23,6 +23,7 @@ module.exports = (grunt)->
         files: [
           {expand: yes, cwd: 'app/assets/', src: '**', dest: 'dev/'}
           {expand: yes, cwd: 'app/src/', src: '**', dest: 'dev/src/'}
+          {expand: yes, cwd: 'app/specs/', src: '**', dest: 'dev/specs/'}
         ]
 
 
@@ -45,7 +46,7 @@ module.exports = (grunt)->
 
 
     grunt.registerTask 'default', ['connect', 'watch']
-    grunt.registerTask 'dev', ['clean', 'copy', 'compass:dev']
+    grunt.registerTask 'dev', [ 'copy', 'compass:dev']
     grunt.registerTask 'preview', ['connect', 'watch']
 
     grunt.loadNpmTasks 'grunt-contrib-jshint'

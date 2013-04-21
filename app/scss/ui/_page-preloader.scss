@@ -7,7 +7,8 @@
 }
 
 .page-preloader-ani{
-  $d: 64px;
+  background:$orange image-url('loader-gears.gif') center no-repeat;
+  $d: 80px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -16,6 +17,6 @@
   display: block;
   width: $d;
   height: $d;
-  background-color: red;
-  @include animate(bounceInUp, 1s, 0);
+  @include border-radius(100px);
+  @include animate(fadeIn, .4s, 0);
 }

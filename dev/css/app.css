@@ -1,4 +1,4 @@
-/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -3292,18 +3292,153 @@ body, html {
   height: 100%;
 }
 
-/* line 4, ../../app/scss/_layout.scss */
+/* line 19, ../../app/scss/_layout.scss */
+.users-index-page, .users-get-container {
+  max-width: 640px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+/* line 25, ../../app/scss/_layout.scss */
 .page-container {
   width: 100%;
   height: 100%;
 }
 
-/* line 10, ../../app/scss/_layout.scss */
+/* line 31, ../../app/scss/_layout.scss */
 .main-container {
   width: 100%;
   height: 100%;
   padding: 10px;
   position: relative;
+}
+
+/* line 4, ../../app/scss/_typography.scss */
+.users-index-page .users-index-title {
+  margin-bottom: .5em;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+/* line 10, ../../app/scss/_typography.scss */
+.users-get-container .single-user-name {
+  margin-bottom: .5em;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 3, ../../app/scss/vendor/_icons.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 20, ../../app/scss/vendor/_icons.scss */
+.icon-home, .icon-twitter, .icon-pencil, .icon-pencil-2, .icon-quill, .icon-pen, .icon-image, .icon-tag, .icon-close, .icon-checkmark, .icon-cog, .icon-users, .icon-quotes-left, .icon-phone, .icon-envelop {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 30, ../../app/scss/vendor/_icons.scss */
+.icon-home:before {
+  content: "\e000";
+}
+
+/* line 33, ../../app/scss/vendor/_icons.scss */
+.icon-twitter:before {
+  content: "\e001";
+}
+
+/* line 36, ../../app/scss/vendor/_icons.scss */
+.icon-pencil:before {
+  content: "\e002";
+}
+
+/* line 39, ../../app/scss/vendor/_icons.scss */
+.icon-pencil-2:before {
+  content: "\e003";
+}
+
+/* line 42, ../../app/scss/vendor/_icons.scss */
+.icon-quill:before {
+  content: "\e004";
+}
+
+/* line 45, ../../app/scss/vendor/_icons.scss */
+.icon-pen:before {
+  content: "\e005";
+}
+
+/* line 48, ../../app/scss/vendor/_icons.scss */
+.icon-image:before {
+  content: "\e006";
+}
+
+/* line 51, ../../app/scss/vendor/_icons.scss */
+.icon-tag:before {
+  content: "\e007";
+}
+
+/* line 54, ../../app/scss/vendor/_icons.scss */
+.icon-close:before {
+  content: "\e008";
+}
+
+/* line 57, ../../app/scss/vendor/_icons.scss */
+.icon-checkmark:before {
+  content: "\e009";
+}
+
+/* line 60, ../../app/scss/vendor/_icons.scss */
+.icon-cog:before {
+  content: "\e00a";
+}
+
+/* line 63, ../../app/scss/vendor/_icons.scss */
+.icon-users:before {
+  content: "\e00b";
+}
+
+/* line 66, ../../app/scss/vendor/_icons.scss */
+.icon-quotes-left:before {
+  content: "\e00c";
+}
+
+/* line 69, ../../app/scss/vendor/_icons.scss */
+.icon-phone:before {
+  content: "\e00d";
+}
+
+/* line 72, ../../app/scss/vendor/_icons.scss */
+.icon-envelop:before {
+  content: "\e00e";
 }
 
 /* line 1, ../../app/scss/ui/_page-preloader.scss */
@@ -3317,20 +3452,25 @@ body, html {
 
 /* line 9, ../../app/scss/ui/_page-preloader.scss */
 .page-preloader-ani {
+  background: #e95c33 url('/img/loader-gears.gif') center no-repeat;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -32px;
-  margin-top: -32px;
+  margin-left: -40px;
+  margin-top: -40px;
   display: block;
-  width: 64px;
-  height: 64px;
-  background-color: red;
-  -webkit-animation: bounceInUp 1s 0 ease both;
-  -moz-animation: bounceInUp 1s 0 ease both;
-  -ms-animation: bounceInUp 1s 0 ease both;
-  -o-animation: bounceInUp 1s 0 ease both;
-  animation: bounceInUp 1s 0 ease both;
+  width: 80px;
+  height: 80px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-animation: fadeIn 0.4s 0 ease both;
+  -moz-animation: fadeIn 0.4s 0 ease both;
+  -ms-animation: fadeIn 0.4s 0 ease both;
+  -o-animation: fadeIn 0.4s 0 ease both;
+  animation: fadeIn 0.4s 0 ease both;
 }
 
 /* line 1, ../../app/scss/pages/_intro.scss */
@@ -3338,8 +3478,13 @@ body, html {
   background-color: pink;
 }
 
-/* line 1, ../../app/scss/pages/_users-index.scss */
-.users-index-item {
+/* line 4, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-title {
+  color: #fafafa;
+  margin-bottom: .5em;
+}
+/* line 9, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item {
   padding: 10px;
   background: #fafafa;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -3353,342 +3498,337 @@ body, html {
   *display: inline;
   margin: 0 10px 10px 0;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(1) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(1) {
   -webkit-animation: fadeInLeft 0.4s 0.07s ease both;
   -moz-animation: fadeInLeft 0.4s 0.07s ease both;
   -ms-animation: fadeInLeft 0.4s 0.07s ease both;
   -o-animation: fadeInLeft 0.4s 0.07s ease both;
   animation: fadeInLeft 0.4s 0.07s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(2) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(2) {
   -webkit-animation: fadeInLeft 0.4s 0.14s ease both;
   -moz-animation: fadeInLeft 0.4s 0.14s ease both;
   -ms-animation: fadeInLeft 0.4s 0.14s ease both;
   -o-animation: fadeInLeft 0.4s 0.14s ease both;
   animation: fadeInLeft 0.4s 0.14s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(3) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(3) {
   -webkit-animation: fadeInLeft 0.4s 0.21s ease both;
   -moz-animation: fadeInLeft 0.4s 0.21s ease both;
   -ms-animation: fadeInLeft 0.4s 0.21s ease both;
   -o-animation: fadeInLeft 0.4s 0.21s ease both;
   animation: fadeInLeft 0.4s 0.21s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(4) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(4) {
   -webkit-animation: fadeInLeft 0.4s 0.28s ease both;
   -moz-animation: fadeInLeft 0.4s 0.28s ease both;
   -ms-animation: fadeInLeft 0.4s 0.28s ease both;
   -o-animation: fadeInLeft 0.4s 0.28s ease both;
   animation: fadeInLeft 0.4s 0.28s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(5) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(5) {
   -webkit-animation: fadeInLeft 0.4s 0.35s ease both;
   -moz-animation: fadeInLeft 0.4s 0.35s ease both;
   -ms-animation: fadeInLeft 0.4s 0.35s ease both;
   -o-animation: fadeInLeft 0.4s 0.35s ease both;
   animation: fadeInLeft 0.4s 0.35s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(6) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(6) {
   -webkit-animation: fadeInLeft 0.4s 0.42s ease both;
   -moz-animation: fadeInLeft 0.4s 0.42s ease both;
   -ms-animation: fadeInLeft 0.4s 0.42s ease both;
   -o-animation: fadeInLeft 0.4s 0.42s ease both;
   animation: fadeInLeft 0.4s 0.42s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(7) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(7) {
   -webkit-animation: fadeInLeft 0.4s 0.49s ease both;
   -moz-animation: fadeInLeft 0.4s 0.49s ease both;
   -ms-animation: fadeInLeft 0.4s 0.49s ease both;
   -o-animation: fadeInLeft 0.4s 0.49s ease both;
   animation: fadeInLeft 0.4s 0.49s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(8) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(8) {
   -webkit-animation: fadeInLeft 0.4s 0.56s ease both;
   -moz-animation: fadeInLeft 0.4s 0.56s ease both;
   -ms-animation: fadeInLeft 0.4s 0.56s ease both;
   -o-animation: fadeInLeft 0.4s 0.56s ease both;
   animation: fadeInLeft 0.4s 0.56s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(9) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(9) {
   -webkit-animation: fadeInLeft 0.4s 0.63s ease both;
   -moz-animation: fadeInLeft 0.4s 0.63s ease both;
   -ms-animation: fadeInLeft 0.4s 0.63s ease both;
   -o-animation: fadeInLeft 0.4s 0.63s ease both;
   animation: fadeInLeft 0.4s 0.63s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(10) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(10) {
   -webkit-animation: fadeInLeft 0.4s 0.7s ease both;
   -moz-animation: fadeInLeft 0.4s 0.7s ease both;
   -ms-animation: fadeInLeft 0.4s 0.7s ease both;
   -o-animation: fadeInLeft 0.4s 0.7s ease both;
   animation: fadeInLeft 0.4s 0.7s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(11) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(11) {
   -webkit-animation: fadeInLeft 0.4s 0.77s ease both;
   -moz-animation: fadeInLeft 0.4s 0.77s ease both;
   -ms-animation: fadeInLeft 0.4s 0.77s ease both;
   -o-animation: fadeInLeft 0.4s 0.77s ease both;
   animation: fadeInLeft 0.4s 0.77s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(12) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(12) {
   -webkit-animation: fadeInLeft 0.4s 0.84s ease both;
   -moz-animation: fadeInLeft 0.4s 0.84s ease both;
   -ms-animation: fadeInLeft 0.4s 0.84s ease both;
   -o-animation: fadeInLeft 0.4s 0.84s ease both;
   animation: fadeInLeft 0.4s 0.84s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(13) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(13) {
   -webkit-animation: fadeInLeft 0.4s 0.91s ease both;
   -moz-animation: fadeInLeft 0.4s 0.91s ease both;
   -ms-animation: fadeInLeft 0.4s 0.91s ease both;
   -o-animation: fadeInLeft 0.4s 0.91s ease both;
   animation: fadeInLeft 0.4s 0.91s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(14) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(14) {
   -webkit-animation: fadeInLeft 0.4s 0.98s ease both;
   -moz-animation: fadeInLeft 0.4s 0.98s ease both;
   -ms-animation: fadeInLeft 0.4s 0.98s ease both;
   -o-animation: fadeInLeft 0.4s 0.98s ease both;
   animation: fadeInLeft 0.4s 0.98s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(15) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(15) {
   -webkit-animation: fadeInLeft 0.4s 1.05s ease both;
   -moz-animation: fadeInLeft 0.4s 1.05s ease both;
   -ms-animation: fadeInLeft 0.4s 1.05s ease both;
   -o-animation: fadeInLeft 0.4s 1.05s ease both;
   animation: fadeInLeft 0.4s 1.05s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(16) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(16) {
   -webkit-animation: fadeInLeft 0.4s 1.12s ease both;
   -moz-animation: fadeInLeft 0.4s 1.12s ease both;
   -ms-animation: fadeInLeft 0.4s 1.12s ease both;
   -o-animation: fadeInLeft 0.4s 1.12s ease both;
   animation: fadeInLeft 0.4s 1.12s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(17) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(17) {
   -webkit-animation: fadeInLeft 0.4s 1.19s ease both;
   -moz-animation: fadeInLeft 0.4s 1.19s ease both;
   -ms-animation: fadeInLeft 0.4s 1.19s ease both;
   -o-animation: fadeInLeft 0.4s 1.19s ease both;
   animation: fadeInLeft 0.4s 1.19s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(18) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(18) {
   -webkit-animation: fadeInLeft 0.4s 1.26s ease both;
   -moz-animation: fadeInLeft 0.4s 1.26s ease both;
   -ms-animation: fadeInLeft 0.4s 1.26s ease both;
   -o-animation: fadeInLeft 0.4s 1.26s ease both;
   animation: fadeInLeft 0.4s 1.26s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(19) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(19) {
   -webkit-animation: fadeInLeft 0.4s 1.33s ease both;
   -moz-animation: fadeInLeft 0.4s 1.33s ease both;
   -ms-animation: fadeInLeft 0.4s 1.33s ease both;
   -o-animation: fadeInLeft 0.4s 1.33s ease both;
   animation: fadeInLeft 0.4s 1.33s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(20) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(20) {
   -webkit-animation: fadeInLeft 0.4s 1.4s ease both;
   -moz-animation: fadeInLeft 0.4s 1.4s ease both;
   -ms-animation: fadeInLeft 0.4s 1.4s ease both;
   -o-animation: fadeInLeft 0.4s 1.4s ease both;
   animation: fadeInLeft 0.4s 1.4s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(21) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(21) {
   -webkit-animation: fadeInLeft 0.4s 1.47s ease both;
   -moz-animation: fadeInLeft 0.4s 1.47s ease both;
   -ms-animation: fadeInLeft 0.4s 1.47s ease both;
   -o-animation: fadeInLeft 0.4s 1.47s ease both;
   animation: fadeInLeft 0.4s 1.47s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(22) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(22) {
   -webkit-animation: fadeInLeft 0.4s 1.54s ease both;
   -moz-animation: fadeInLeft 0.4s 1.54s ease both;
   -ms-animation: fadeInLeft 0.4s 1.54s ease both;
   -o-animation: fadeInLeft 0.4s 1.54s ease both;
   animation: fadeInLeft 0.4s 1.54s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(23) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(23) {
   -webkit-animation: fadeInLeft 0.4s 1.61s ease both;
   -moz-animation: fadeInLeft 0.4s 1.61s ease both;
   -ms-animation: fadeInLeft 0.4s 1.61s ease both;
   -o-animation: fadeInLeft 0.4s 1.61s ease both;
   animation: fadeInLeft 0.4s 1.61s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(24) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(24) {
   -webkit-animation: fadeInLeft 0.4s 1.68s ease both;
   -moz-animation: fadeInLeft 0.4s 1.68s ease both;
   -ms-animation: fadeInLeft 0.4s 1.68s ease both;
   -o-animation: fadeInLeft 0.4s 1.68s ease both;
   animation: fadeInLeft 0.4s 1.68s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(25) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(25) {
   -webkit-animation: fadeInLeft 0.4s 1.75s ease both;
   -moz-animation: fadeInLeft 0.4s 1.75s ease both;
   -ms-animation: fadeInLeft 0.4s 1.75s ease both;
   -o-animation: fadeInLeft 0.4s 1.75s ease both;
   animation: fadeInLeft 0.4s 1.75s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(26) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(26) {
   -webkit-animation: fadeInLeft 0.4s 1.82s ease both;
   -moz-animation: fadeInLeft 0.4s 1.82s ease both;
   -ms-animation: fadeInLeft 0.4s 1.82s ease both;
   -o-animation: fadeInLeft 0.4s 1.82s ease both;
   animation: fadeInLeft 0.4s 1.82s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(27) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(27) {
   -webkit-animation: fadeInLeft 0.4s 1.89s ease both;
   -moz-animation: fadeInLeft 0.4s 1.89s ease both;
   -ms-animation: fadeInLeft 0.4s 1.89s ease both;
   -o-animation: fadeInLeft 0.4s 1.89s ease both;
   animation: fadeInLeft 0.4s 1.89s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(28) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(28) {
   -webkit-animation: fadeInLeft 0.4s 1.96s ease both;
   -moz-animation: fadeInLeft 0.4s 1.96s ease both;
   -ms-animation: fadeInLeft 0.4s 1.96s ease both;
   -o-animation: fadeInLeft 0.4s 1.96s ease both;
   animation: fadeInLeft 0.4s 1.96s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(29) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(29) {
   -webkit-animation: fadeInLeft 0.4s 2.03s ease both;
   -moz-animation: fadeInLeft 0.4s 2.03s ease both;
   -ms-animation: fadeInLeft 0.4s 2.03s ease both;
   -o-animation: fadeInLeft 0.4s 2.03s ease both;
   animation: fadeInLeft 0.4s 2.03s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(30) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(30) {
   -webkit-animation: fadeInLeft 0.4s 2.1s ease both;
   -moz-animation: fadeInLeft 0.4s 2.1s ease both;
   -ms-animation: fadeInLeft 0.4s 2.1s ease both;
   -o-animation: fadeInLeft 0.4s 2.1s ease both;
   animation: fadeInLeft 0.4s 2.1s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(31) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(31) {
   -webkit-animation: fadeInLeft 0.4s 2.17s ease both;
   -moz-animation: fadeInLeft 0.4s 2.17s ease both;
   -ms-animation: fadeInLeft 0.4s 2.17s ease both;
   -o-animation: fadeInLeft 0.4s 2.17s ease both;
   animation: fadeInLeft 0.4s 2.17s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(32) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(32) {
   -webkit-animation: fadeInLeft 0.4s 2.24s ease both;
   -moz-animation: fadeInLeft 0.4s 2.24s ease both;
   -ms-animation: fadeInLeft 0.4s 2.24s ease both;
   -o-animation: fadeInLeft 0.4s 2.24s ease both;
   animation: fadeInLeft 0.4s 2.24s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(33) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(33) {
   -webkit-animation: fadeInLeft 0.4s 2.31s ease both;
   -moz-animation: fadeInLeft 0.4s 2.31s ease both;
   -ms-animation: fadeInLeft 0.4s 2.31s ease both;
   -o-animation: fadeInLeft 0.4s 2.31s ease both;
   animation: fadeInLeft 0.4s 2.31s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(34) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(34) {
   -webkit-animation: fadeInLeft 0.4s 2.38s ease both;
   -moz-animation: fadeInLeft 0.4s 2.38s ease both;
   -ms-animation: fadeInLeft 0.4s 2.38s ease both;
   -o-animation: fadeInLeft 0.4s 2.38s ease both;
   animation: fadeInLeft 0.4s 2.38s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(35) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(35) {
   -webkit-animation: fadeInLeft 0.4s 2.45s ease both;
   -moz-animation: fadeInLeft 0.4s 2.45s ease both;
   -ms-animation: fadeInLeft 0.4s 2.45s ease both;
   -o-animation: fadeInLeft 0.4s 2.45s ease both;
   animation: fadeInLeft 0.4s 2.45s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(36) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(36) {
   -webkit-animation: fadeInLeft 0.4s 2.52s ease both;
   -moz-animation: fadeInLeft 0.4s 2.52s ease both;
   -ms-animation: fadeInLeft 0.4s 2.52s ease both;
   -o-animation: fadeInLeft 0.4s 2.52s ease both;
   animation: fadeInLeft 0.4s 2.52s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(37) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(37) {
   -webkit-animation: fadeInLeft 0.4s 2.59s ease both;
   -moz-animation: fadeInLeft 0.4s 2.59s ease both;
   -ms-animation: fadeInLeft 0.4s 2.59s ease both;
   -o-animation: fadeInLeft 0.4s 2.59s ease both;
   animation: fadeInLeft 0.4s 2.59s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(38) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(38) {
   -webkit-animation: fadeInLeft 0.4s 2.66s ease both;
   -moz-animation: fadeInLeft 0.4s 2.66s ease both;
   -ms-animation: fadeInLeft 0.4s 2.66s ease both;
   -o-animation: fadeInLeft 0.4s 2.66s ease both;
   animation: fadeInLeft 0.4s 2.66s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(39) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(39) {
   -webkit-animation: fadeInLeft 0.4s 2.73s ease both;
   -moz-animation: fadeInLeft 0.4s 2.73s ease both;
   -ms-animation: fadeInLeft 0.4s 2.73s ease both;
   -o-animation: fadeInLeft 0.4s 2.73s ease both;
   animation: fadeInLeft 0.4s 2.73s ease both;
 }
-/* line 10, ../../app/scss/pages/_users-index.scss */
-.users-index-item:nth-child(40) {
+/* line 18, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item:nth-child(40) {
   -webkit-animation: fadeInLeft 0.4s 2.8s ease both;
   -moz-animation: fadeInLeft 0.4s 2.8s ease both;
   -ms-animation: fadeInLeft 0.4s 2.8s ease both;
   -o-animation: fadeInLeft 0.4s 2.8s ease both;
   animation: fadeInLeft 0.4s 2.8s ease both;
 }
-/* line 16, ../../app/scss/pages/_users-index.scss */
-.users-index-item .user-avatar-wrapper {
+/* line 24, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item .user-avatar-wrapper {
   width: 60px;
   float: left;
   display: block;
   width: 60px;
   height: 60px;
-  -webkit-border-radius: 100em;
-  -moz-border-radius: 100em;
-  -ms-border-radius: 100em;
-  -o-border-radius: 100em;
-  border-radius: 100em;
   overflow: hidden;
 }
-/* line 30, ../../app/scss/pages/_users-index.scss */
-.users-index-item .user-avatar-placeholder {
+/* line 37, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item .user-avatar-placeholder {
   width: 60px;
   height: 60px;
   text-align: center;
@@ -3696,13 +3836,39 @@ body, html {
   text-transform: uppercase;
   font-size: 18px;
   display: block;
-  background-color: #666666;
-  color: #333333;
+  background-color: #d0d0d0;
+  color: #666666;
 }
-/* line 42, ../../app/scss/pages/_users-index.scss */
-.users-index-item .user-desc {
+/* line 49, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item .user-desc {
   margin-left: 70px;
   line-height: 60px;
+}
+/* line 53, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-item .user-desc a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 24px;
+}
+/* line 64, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-list {
+  display: inline;
+}
+/* line 69, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-add-btn {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 32px;
+  padding: 10px;
+  -webkit-animation: fadeIn 0.9s 1s ease both;
+  -moz-animation: fadeIn 0.9s 1s ease both;
+  -ms-animation: fadeIn 0.9s 1s ease both;
+  -o-animation: fadeIn 0.9s 1s ease both;
+  animation: fadeIn 0.9s 1s ease both;
+}
+/* line 76, ../../app/scss/pages/_users-index.scss */
+.users-index-page .users-index-add-btn:hover {
+  background-color: rgba(250, 250, 250, 0.1);
 }
 
 /* line 1, ../../app/scss/pages/_users-get.scss */
@@ -3712,17 +3878,123 @@ body, html {
   -ms-animation: fadeInLeft 0.6s 0.2s ease both;
   -o-animation: fadeInLeft 0.6s 0.2s ease both;
   animation: fadeInLeft 0.6s 0.2s ease both;
+  background-color: #fafafa;
+  padding: 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+/* line 9, ../../app/scss/pages/_users-get.scss */
+.users-get-container .users-single-close-btn {
+  position: absolute;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  color: #999999;
+  text-align: center;
+  line-height: 36px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 27, ../../app/scss/pages/_users-get.scss */
+.users-get-container .users-single-close-btn:hover {
+  color: #666666;
+}
+/* line 33, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-icon {
+  position: relative;
+  left: -10px;
+  float: left;
+}
+@media all and (max-width: 768px) {
+  /* line 33, ../../app/scss/pages/_users-get.scss */
+  .users-get-container .single-user-icon {
+    float: none;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 46, ../../app/scss/pages/_users-get.scss */
+  .users-get-container .single-user-avatar {
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 56, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-general {
+  font-size: 18px;
+}
+/* line 58, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-general dt {
+  color: #999999;
+}
+/* line 62, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-general dd {
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+/* line 71, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-contact-link {
+  font-size: 14px;
+  color: #4d90fe;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 76, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-contact-link:hover {
+  color: #e95c33;
+}
+/* line 81, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-content {
+  margin-left: 330px;
+}
+@media all and (max-width: 768px) {
+  /* line 81, ../../app/scss/pages/_users-get.scss */
+  .users-get-container .single-user-content {
+    margin-left: 0;
+  }
+}
+/* line 89, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-section {
+  margin-bottom: 2em;
+}
+/* line 94, ../../app/scss/pages/_users-get.scss */
+.users-get-container .single-user-content-title {
+  font-size: 24px;
+  color: #999999;
+  margin-bottom: .5em;
 }
 
-/* line 23, ../../app/scss/app.scss */
+/* line 24, ../../app/scss/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 27, ../../app/scss/app.scss */
+/* line 28, ../../app/scss/app.scss */
 body {
+  line-height: 1.4em;
   font-family: "Segoe UI Light", "Helvetica Neue", "Segoe UI", sans-serif;
   background: #fafafa url('/img/bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

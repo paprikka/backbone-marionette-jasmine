@@ -1,3 +1,101 @@
 .users-get-container{
   @include animate(fadeInLeft, .6s);
+  @extend %subpage-container;
+  background-color: $white;
+  padding: 10px;
+  @include box-shadow(0 3px 5px rgba(0,0,0,.1));
+
+  
+  .users-single-close-btn{
+    $size: 36px;
+    position: absolute;
+    font-size: 18px;
+    width: $size;
+    height: $size;
+    @include border-radius(100px);
+    color: $gray-light;
+    text-align: center;
+    line-height: $size;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    // border: 2px solid;
+    text-decoration: none;
+    
+
+    @include transition(.2s);
+    &:hover{
+      color: $gray;
+    }
+
+  }
+
+  .single-user-icon{
+    position: relative;
+    left: -10px;
+    float: left;
+    
+    @include respond-to(phone){
+      float: none;
+      left: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  }
+  .single-user-avatar{
+    @include respond-to(phone){
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .single-user-name{
+    @extend %beta;
+  }
+  .single-user-general{
+    font-size: 18px;
+    dt{
+    color: $gray-light;
+      
+    }
+    dd{
+      font-size: 14px;
+      margin-bottom: 1em;
+    }
+  }
+  .single-user-contact{
+    
+  }
+  
+  .single-user-contact-link{
+    font-size: 14px;
+    color: $blue;
+    text-decoration: none;
+    @include transition(.2s);
+    &:hover{
+      color: $orange;
+    }
+  }
+  
+  .single-user-content{
+    margin-left: 330px;
+
+    @include respond-to(phone){
+      margin-left: 0;
+    }
+  }
+
+  .single-user-section{
+    margin-bottom: 2em;
+  }
+
+
+  .single-user-content-title{
+    font-size: 24px;
+    color: $gray-light;
+    margin-bottom: .5em;
+
+  }
+  
 }

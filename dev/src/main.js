@@ -2,7 +2,11 @@ define(function (require) {
   var App = require('src/application');
   var $ = require('jquery');
   $(function() {
-    App.start();
-    console.log('Application::initialized');
+    function mockLoadingDelay(){
+      App.start();
+      console.log('Application::initialized');
+    };
+
+    setTimeout(mockLoadingDelay, 900);
   });
 });

@@ -10,6 +10,7 @@
 @import "colors";
 @import "layout";
 @import "typography";
+@import "icons-config";
 
 // reusable ui elements
 @import "ui/page-preloader";
@@ -25,9 +26,10 @@
 }
 
 body{
-
+  line-height: 1.4em;
   font-family: $body-font-stack;
   background: $white image-url('bg.jpg');
+  @include background-size(cover);
 }
 
 
