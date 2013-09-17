@@ -1,7 +1,3 @@
-## Example Backbone Marionette App
-
-# Backbone.Marionette, Handlebars + Jasmine example contact list app
-
 ## Setup
 
 
